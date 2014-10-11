@@ -20,7 +20,7 @@ app.post('/post', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
     /*response has to be in the form of a JSON*/
     req.body.serverMessage = "NodeJS replying to angular"
-        /*adding a new field to send it to the angular Client */
+    /*adding a new field to send it to the angular Client */
     res.end(JSON.stringify(result));
     /*Sending the response back to the angular Client */
 });
